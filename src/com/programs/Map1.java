@@ -12,7 +12,7 @@ class Map1
 	public static void main(String[] args) {
 		HashMap<Integer,String> map= new LinkedHashMap<Integer,String>();
 		map.put(1, "sharath");
-		map.put(2, "sanju");
+		map.put(2, "sanju ");
 		map.put(3, "santosh");
 		map.put(4, "df");
 		System.out.println(map.get(4));
