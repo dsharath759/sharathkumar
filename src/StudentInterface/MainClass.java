@@ -4,8 +4,6 @@ package StudentInterface;
 
 import java.util.Scanner;
 
-import com.inheritance.MultipleInheritance;
-
 import StudentInterface.StuInterface.PerI;
 import StudentInterface.StuInterface.TotalMar;
 
@@ -42,6 +40,24 @@ public class MainClass implements TotalMar,PerI{
 		System.out.println("Chemistry  : "+m3);
 		System.out.println("\nTotal Marks   : "+MI.calculate_total(m1, m2, m3));
 		System.out.println("Percentage    : "+MI.per(m1, m2, m3));
-		
-}
+		double percentage = MI.per(m1, m2, m3);
+		if(percentage>=35) {
+			System.out.println("Grade E(Failed)");
+		}
+		else if(percentage<=36 && percentage>=50) {
+			System.out.println("Grade D(Passed)");
+		}
+		else if(percentage<=51 && percentage>=60) {
+			System.out.println("Grade C(Passed)");
+		}
+		else if(percentage<=61 && percentage>=70) {
+			System.out.println("Grade B(Passed)");
+		}
+		else if(percentage<=71 && percentage>=80) {
+			System.out.println("Grade A(Passed with First Class Marks)");
+		}
+		else if(percentage<=81 && percentage>=100) {
+			System.out.println("Grade A+(Passed with Distinction Marks)");
+		}
+	}
 }

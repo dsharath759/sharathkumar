@@ -9,4 +9,5 @@ public class Percentage implements PerI{
 		double result  =  (a+b+c)*100/300;
 		return result;
 	}
+	
 }
